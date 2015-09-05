@@ -14,6 +14,11 @@
 		4EDF82001B9A4F86006ED7A1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EDF81FF1B9A4F86006ED7A1 /* Images.xcassets */; };
 		4EDF82031B9A4F86006ED7A1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4EDF82011B9A4F86006ED7A1 /* LaunchScreen.xib */; };
 		4EDF820F1B9A4F86006ED7A1 /* AnekeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDF820E1B9A4F86006ED7A1 /* AnekeTests.swift */; };
+		4EDF82191B9A5221006ED7A1 /* CategoriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDF82181B9A5221006ED7A1 /* CategoriesTableViewController.swift */; };
+		4EDF821B1B9A5C13006ED7A1 /* ProductsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDF821A1B9A5C13006ED7A1 /* ProductsTableViewController.swift */; };
+		4EDF821D1B9A5E9D006ED7A1 /* CategoryDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDF821C1B9A5E9D006ED7A1 /* CategoryDataSource.swift */; };
+		4EDF821F1B9A9EAD006ED7A1 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDF821E1B9A9EAD006ED7A1 /* Product.swift */; };
+		4EDF82211B9AA957006ED7A1 /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDF82201B9AA957006ED7A1 /* ProductTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +43,11 @@
 		4EDF82081B9A4F86006ED7A1 /* AnekeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnekeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EDF820D1B9A4F86006ED7A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4EDF820E1B9A4F86006ED7A1 /* AnekeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnekeTests.swift; sourceTree = "<group>"; };
+		4EDF82181B9A5221006ED7A1 /* CategoriesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesTableViewController.swift; sourceTree = "<group>"; };
+		4EDF821A1B9A5C13006ED7A1 /* ProductsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProductsTableViewController.swift; path = ../ProductsTableViewController.swift; sourceTree = "<group>"; };
+		4EDF821C1B9A5E9D006ED7A1 /* CategoryDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryDataSource.swift; sourceTree = "<group>"; };
+		4EDF821E1B9A9EAD006ED7A1 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		4EDF82201B9AA957006ED7A1 /* ProductTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +89,7 @@
 		4EDF81F31B9A4F86006ED7A1 /* Aneke */ = {
 			isa = PBXGroup;
 			children = (
+				4EDF821A1B9A5C13006ED7A1 /* ProductsTableViewController.swift */,
 				4EDF81F61B9A4F86006ED7A1 /* AppDelegate.swift */,
 				4EDF81F81B9A4F86006ED7A1 /* FirstViewController.swift */,
 				4EDF81FA1B9A4F86006ED7A1 /* SecondViewController.swift */,
@@ -86,6 +97,10 @@
 				4EDF81FF1B9A4F86006ED7A1 /* Images.xcassets */,
 				4EDF82011B9A4F86006ED7A1 /* LaunchScreen.xib */,
 				4EDF81F41B9A4F86006ED7A1 /* Supporting Files */,
+				4EDF82181B9A5221006ED7A1 /* CategoriesTableViewController.swift */,
+				4EDF821C1B9A5E9D006ED7A1 /* CategoryDataSource.swift */,
+				4EDF82201B9AA957006ED7A1 /* ProductTableViewCell.swift */,
+				4EDF821E1B9A9EAD006ED7A1 /* Product.swift */,
 			);
 			path = Aneke;
 			sourceTree = "<group>";
@@ -216,8 +231,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				4EDF81FB1B9A4F86006ED7A1 /* SecondViewController.swift in Sources */,
+				4EDF82211B9AA957006ED7A1 /* ProductTableViewCell.swift in Sources */,
 				4EDF81F71B9A4F86006ED7A1 /* AppDelegate.swift in Sources */,
+				4EDF821D1B9A5E9D006ED7A1 /* CategoryDataSource.swift in Sources */,
 				4EDF81F91B9A4F86006ED7A1 /* FirstViewController.swift in Sources */,
+				4EDF82191B9A5221006ED7A1 /* CategoriesTableViewController.swift in Sources */,
+				4EDF821B1B9A5C13006ED7A1 /* ProductsTableViewController.swift in Sources */,
+				4EDF821F1B9A9EAD006ED7A1 /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
