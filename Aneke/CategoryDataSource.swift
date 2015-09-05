@@ -12,9 +12,11 @@ class CategoryDataSource: NSObject, UITableViewDataSource {
     
     var queryset: [Product]?
     var tableViewController: UITableViewController
+    var category: String
     
-    init (controller: UITableViewController) {
+    init (controller: UITableViewController, category: String) {
         self.tableViewController = controller
+        self.category = category
         super.init()
         let refreshControll = UIRefreshControl()
         refreshControll.addTarget(self, action: "reload", forControlEvents: UIControlEvents.ValueChanged)
@@ -25,7 +27,7 @@ class CategoryDataSource: NSObject, UITableViewDataSource {
     
     func reload() {
         self.tableViewController.refreshControl?.beginRefreshing()
-        Product.all() {
+        Product.all("category__name=" + self.category) {
             products in
             self.setQuerySet(products)
             self.tableViewController.tableView.dataSource = self

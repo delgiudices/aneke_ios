@@ -23,8 +23,8 @@ class Product: NSObject {
         
     }
     
-    class func all( callBack: ([Product]) -> () ) {
-        let url = NSURL(string: "http://192.168.0.100:8000/api/products")!
+    class func all(params: String, callBack: ([Product]) -> () ) {
+        let url = NSURL(string: Settings.API_ROOT + "/products?" + params)!
         let request = NSURLRequest(URL: url)
         NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue.mainQueue()) {
             (response, data, error) in

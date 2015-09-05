@@ -12,7 +12,7 @@ class CategoriesTableViewController: UITableViewController {
     
     let categories = [
         ["key": "belleza", "val": "Belleza"],
-        ["key": "otro", "val": "Otro"]
+        ["key": "comestibles", "val": "Comestibles"]
     ]
 
     override func viewDidLoad() {
@@ -57,7 +57,7 @@ class CategoriesTableViewController: UITableViewController {
         let callerCell : UITableViewCell = sender as! UITableViewCell
         let indexPath = self.tableView.indexPathForCell(callerCell)
         let controller = segue.destinationViewController as! ProductsTableViewController
-        controller.setTheDataSource(CategoryDataSource(controller: segue.destinationViewController as! UITableViewController))
+        controller.setTheDataSource(CategoryDataSource(controller: segue.destinationViewController as! UITableViewController, category: categories[indexPath!.row]["val"]!))
     }
     
 

@@ -19,6 +19,8 @@
 		4EDF821D1B9A5E9D006ED7A1 /* CategoryDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDF821C1B9A5E9D006ED7A1 /* CategoryDataSource.swift */; };
 		4EDF821F1B9A9EAD006ED7A1 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDF821E1B9A9EAD006ED7A1 /* Product.swift */; };
 		4EDF82211B9AA957006ED7A1 /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDF82201B9AA957006ED7A1 /* ProductTableViewCell.swift */; };
+		4EDF82231B9B1F1D006ED7A1 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDF82221B9B1F1D006ED7A1 /* Settings.swift */; };
+		4EDF82251B9B8271006ED7A1 /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDF82241B9B8271006ED7A1 /* SearchController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		4EDF821C1B9A5E9D006ED7A1 /* CategoryDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryDataSource.swift; sourceTree = "<group>"; };
 		4EDF821E1B9A9EAD006ED7A1 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		4EDF82201B9AA957006ED7A1 /* ProductTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
+		4EDF82221B9B1F1D006ED7A1 /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		4EDF82241B9B8271006ED7A1 /* SearchController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,7 @@
 				4EDF81F81B9A4F86006ED7A1 /* FirstViewController.swift */,
 				4EDF81FA1B9A4F86006ED7A1 /* SecondViewController.swift */,
 				4EDF81FC1B9A4F86006ED7A1 /* Main.storyboard */,
+				4EDF82241B9B8271006ED7A1 /* SearchController.swift */,
 				4EDF81FF1B9A4F86006ED7A1 /* Images.xcassets */,
 				4EDF82011B9A4F86006ED7A1 /* LaunchScreen.xib */,
 				4EDF81F41B9A4F86006ED7A1 /* Supporting Files */,
@@ -101,6 +106,7 @@
 				4EDF821C1B9A5E9D006ED7A1 /* CategoryDataSource.swift */,
 				4EDF82201B9AA957006ED7A1 /* ProductTableViewCell.swift */,
 				4EDF821E1B9A9EAD006ED7A1 /* Product.swift */,
+				4EDF82221B9B1F1D006ED7A1 /* Settings.swift */,
 			);
 			path = Aneke;
 			sourceTree = "<group>";
@@ -231,11 +237,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				4EDF81FB1B9A4F86006ED7A1 /* SecondViewController.swift in Sources */,
+				4EDF82251B9B8271006ED7A1 /* SearchController.swift in Sources */,
 				4EDF82211B9AA957006ED7A1 /* ProductTableViewCell.swift in Sources */,
 				4EDF81F71B9A4F86006ED7A1 /* AppDelegate.swift in Sources */,
 				4EDF821D1B9A5E9D006ED7A1 /* CategoryDataSource.swift in Sources */,
 				4EDF81F91B9A4F86006ED7A1 /* FirstViewController.swift in Sources */,
 				4EDF82191B9A5221006ED7A1 /* CategoriesTableViewController.swift in Sources */,
+				4EDF82231B9B1F1D006ED7A1 /* Settings.swift in Sources */,
 				4EDF821B1B9A5C13006ED7A1 /* ProductsTableViewController.swift in Sources */,
 				4EDF821F1B9A9EAD006ED7A1 /* Product.swift in Sources */,
 			);

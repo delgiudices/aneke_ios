@@ -8,13 +8,19 @@
 
 import UIKit
 
-class ProductsTableViewController: UITableViewController {
+class ProductsTableViewController: UITableViewController, UISearchBarDelegate {
     
     var dataSource: CategoryDataSource?
+    var searchBar: UISearchBar?
+    var searchController : UISearchController!
     
     func setTheDataSource(source: CategoryDataSource) {
         // To be implemented
         self.dataSource = source
+    }
+    
+    func setTheSearchBar(bar: UISearchBar) {
+        self.searchBar = bar
     }
     
 
@@ -22,6 +28,16 @@ class ProductsTableViewController: UITableViewController {
         super.viewDidLoad()
         self.tableView.dataSource = dataSource
         dataSource?.reload()
+        
+        if self.searchBar != nil {
+            self.searchController = UISearchController(searchResultsController: nil)
+            self.searchController.hidesNavigationBarDuringPresentation = false
+            self.searchController.dimsBackgroundDuringPresentation = false
+            self.searchController.searchBar.delegate = self
+            self.navigationItem.titleView = self.searchController.searchBar
+            
+
+        }
 
         
 
