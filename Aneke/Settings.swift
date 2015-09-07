@@ -10,6 +10,6 @@ import UIKit
 
 class Settings: NSObject {
     
-    static let API_ROOT = "http://192.168.0.100:8000/api"
+    static let API_ROOT = "http://192.168.0.4:8000/api"
    
 }

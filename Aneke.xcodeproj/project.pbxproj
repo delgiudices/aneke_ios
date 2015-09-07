@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E8CCD7F1B9C812000361951 /* SearchDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8CCD7E1B9C812000361951 /* SearchDataSource.swift */; };
 		4EDF81F71B9A4F86006ED7A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDF81F61B9A4F86006ED7A1 /* AppDelegate.swift */; };
 		4EDF81F91B9A4F86006ED7A1 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDF81F81B9A4F86006ED7A1 /* FirstViewController.swift */; };
 		4EDF81FB1B9A4F86006ED7A1 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDF81FA1B9A4F86006ED7A1 /* SecondViewController.swift */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4E8CCD7E1B9C812000361951 /* SearchDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchDataSource.swift; sourceTree = "<group>"; };
 		4EDF81F11B9A4F86006ED7A1 /* Aneke.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aneke.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EDF81F51B9A4F86006ED7A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4EDF81F61B9A4F86006ED7A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				4EDF821A1B9A5C13006ED7A1 /* ProductsTableViewController.swift */,
+				4E8CCD7E1B9C812000361951 /* SearchDataSource.swift */,
 				4EDF81F61B9A4F86006ED7A1 /* AppDelegate.swift */,
 				4EDF81F81B9A4F86006ED7A1 /* FirstViewController.swift */,
 				4EDF81FA1B9A4F86006ED7A1 /* SecondViewController.swift */,
@@ -237,6 +240,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4EDF81FB1B9A4F86006ED7A1 /* SecondViewController.swift in Sources */,
+				4E8CCD7F1B9C812000361951 /* SearchDataSource.swift in Sources */,
 				4EDF82251B9B8271006ED7A1 /* SearchController.swift in Sources */,
 				4EDF82211B9AA957006ED7A1 /* ProductTableViewCell.swift in Sources */,
 				4EDF81F71B9A4F86006ED7A1 /* AppDelegate.swift in Sources */,
@@ -373,6 +377,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Aneke/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -383,6 +388,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Aneke/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -441,6 +447,7 @@
 				4EDF82141B9A4F86006ED7A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4EDF82151B9A4F86006ED7A1 /* Build configuration list for PBXNativeTarget "AnekeTests" */ = {
 			isa = XCConfigurationList;
@@ -449,6 +456,7 @@
 				4EDF82171B9A4F86006ED7A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

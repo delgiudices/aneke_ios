@@ -37,5 +37,24 @@ class Product: NSObject {
             callBack(queryset)
         }
     }
+    
+    class func filter(querystring: String, callback: ([Product]) -> () ) {
+        var new_querystring = querystring.stringByReplacingOccurrencesOfString(" ", withString: "%20")
+        new_querystring = new_querystring.stringByReplacingOccurrencesOfString("&", withString: "%26")
+        
+        let url = NSURL(string: Settings.API_ROOT + "/products?name__contains=" + new_querystring )!
+        let request = NSURLRequest(URL: url)
+        NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue.mainQueue()) {
+            (response, data, error) in
+            let result = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: nil) as! NSArray
+            
+            var queryset = [Product]()
+            for (product_json) in result {
+                queryset.append(Product(data: product_json as! NSDictionary))
+            }
+            callback(queryset)
+        }
+        
+    }
    
 }

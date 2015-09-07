@@ -8,9 +8,10 @@
 
 import UIKit
 
-class ProductsTableViewController: UITableViewController, UISearchBarDelegate {
+class ProductsTableViewController: UITableViewController, UISearchBarDelegate, UISearchControllerDelegate {
     
     var dataSource: CategoryDataSource?
+    var searchDataSource: SearchDataSource?
     var searchBar: UISearchBar?
     var searchController : UISearchController!
     
@@ -23,7 +24,6 @@ class ProductsTableViewController: UITableViewController, UISearchBarDelegate {
         self.searchBar = bar
     }
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.dataSource = dataSource
@@ -34,18 +34,19 @@ class ProductsTableViewController: UITableViewController, UISearchBarDelegate {
             self.searchController.hidesNavigationBarDuringPresentation = false
             self.searchController.dimsBackgroundDuringPresentation = false
             self.searchController.searchBar.delegate = self
+            self.searchController.delegate = self
             self.navigationItem.titleView = self.searchController.searchBar
-            
-
         }
 
+    }
+    
+    func updateTableDataWithSearchResults() {
         
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+    }
+    
+    func searchBarTextDidEndEditing(searchBar: UISearchBar) {
+        self.searchDataSource = SearchDataSource()
+        self.searchDataSource!.loadSearchData(self, querystring: searchBar.text)
     }
 
     override func didReceiveMemoryWarning() {
