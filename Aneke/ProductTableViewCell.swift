@@ -12,10 +12,15 @@ class ProductTableViewCell: UITableViewCell {
     
     @IBOutlet weak var productNameLabel: UILabel!
     @IBOutlet weak var productCompanyLabel: UILabel!
+    @IBOutlet weak var productImage: UIImageView!
     
     func setProduct(product: Product) {
         self.productCompanyLabel.text = product.company
         self.productNameLabel.text = product.name as String
+        product.getImage() {
+            (image) in
+            self.productImage.image = image
+        }
     }
 
     override func awakeFromNib() {

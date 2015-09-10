@@ -14,14 +14,27 @@ class Product: NSObject {
     var product_description: String
     var category: String
     var company: String
+    var imageUrl: String
     
     required init(data: NSDictionary) {
         self.name = data["name"] as! String
         self.product_description = data["description"] as! String
         self.category = data["category"] as! String
         self.company = data["company"] as! String
+        self.imageUrl = data["image"] as! String
         
     }
+    
+    func getImage( callBack: (UIImage) -> () ) {
+        let request = NSURLRequest(URL: NSURL(string: self.imageUrl)!)
+        NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue.mainQueue()) {
+            (response, data, error) in
+            let image = UIImage(data: data)
+            callBack(image!)
+        }
+    }
+    
+    // Static Functions
     
     class func all(params: String, callBack: ([Product]) -> () ) {
         let url = NSURL(string: Settings.API_ROOT + "/products?" + params)!
